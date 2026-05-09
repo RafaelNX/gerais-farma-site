@@ -11,15 +11,10 @@
   <meta property="og:type" content="website" />
   <title>Gerais Farma | A drogaria do povão</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,10 +22,10 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-<div class="nav-logo">
-  <span class="logo-name">Gerais<span class="logo-accent">Farma</span></span>
-  <span class="logo-slogan">A drogaria do povão</span>
-</div>
+      <div class="nav-logo">
+        <span class="logo-name">Gerais<span class="logo-accent">Farma</span></span>
+        <span class="logo-slogan">A drogaria do povão</span>
+      </div>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#inicio">Início</a></li>
@@ -47,293 +42,553 @@
       </ul>
 
       <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <!-- ===== HERO ===== -->
-<section class="hero" id="inicio">
-  <div class="hero-container">
+  <section class="hero" id="inicio">
+    <div class="hero-bg-photo"></div>
 
-    <div class="hero-content">
-      <div class="hero-badge">
-        <i class="fas fa-shield-alt"></i> Farmácia Popular Credenciada
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-shield-alt"></i> Farmácia Popular Credenciada
+        </div>
+        <h1 class="hero-title">
+          A farmácia que<br/>
+          <span class="hero-highlight">cuida de verdade</span>
+        </h1>
+        <p class="hero-desc">
+          Medicamentos, perfumaria, suplementos, manipulação e muito mais —
+          com o <strong>melhor atendimento da região.</strong>
+        </p>
+        <div class="hero-tags">
+          <span><i class="fas fa-motorcycle"></i> Entrega no Santa Clara</span>
+          <span><i class="fas fa-pills"></i> +5.000 produtos</span>
+          <span><i class="fas fa-heart"></i> Preço acessível</span>
+        </div>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary pulse">
+            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+          <a href="#localizacao" class="btn btn-secondary">
+            <i class="fas fa-map-marker-alt"></i> Ver localização
+          </a>
+        </div>
       </div>
 
-      <h1 class="hero-title">
-        A farmácia que<br/>
-        <span class="hero-highlight">cuida de verdade</span>
-      </h1>
+      <div class="hero-visual">
+        <div class="hero-visual-center">
+          <div class="hvc-ring hvc-ring-1"></div>
+          <div class="hvc-ring hvc-ring-2"></div>
+          <div class="hvc-core">
+            <i class="fas fa-clinic-medical"></i>
+          </div>
+        </div>
 
-      <p class="hero-desc">
-        Medicamentos, perfumaria, suplementos, manipulação e muito mais —
-        com o <strong>melhor atendimento da região.</strong>
-      </p>
+        <div class="hero-stat-card stat-1">
+          <span class="stat-number">5mil+</span>
+          <span class="stat-label">Produtos</span>
+        </div>
+        <div class="hero-stat-card stat-2">
+          <i class="fas fa-star" style="color:#f59e0b"></i>
+          <span class="stat-label">Melhor da região</span>
+        </div>
+        <div class="hero-stat-card stat-3">
+          <i class="fas fa-motorcycle" style="color:var(--red)"></i>
+          <span class="stat-label">Entrega rápida</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="hero-tags">
-        <span><i class="fas fa-motorcycle"></i> Entrega no Santa Clara</span>
-        <span><i class="fas fa-pills"></i> +5.000 produtos</span>
-        <span><i class="fas fa-heart"></i> Preço acessível</span>
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section class="beneficios" id="beneficios">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Por que nos escolher</span>
+        <h2 class="section-title">Tudo que você precisa,<br/><span class="text-red">do jeito que merece</span></h2>
       </div>
 
-      <div class="hero-buttons">
+      <div class="beneficios-grid">
+        <div class="beneficio-card fade-in">
+          <div class="card-icon-wrap" style="background:#fff0f0;">
+            <i class="fas fa-heart" style="color:var(--red)"></i>
+          </div>
+          <h3>Atendimento humanizado</h3>
+          <p>Você é tratado pelo nome, com atenção e cuidado de verdade. Aqui você não é só um número.</p>
+        </div>
+
+        <div class="beneficio-card fade-in">
+          <div class="card-icon-wrap" style="background:#f0fff4;">
+            <i class="fas fa-tag" style="color:#16a34a"></i>
+          </div>
+          <h3>Preço que o povão gosta</h3>
+          <p>Praticamos os melhores preços da região, porque acreditamos que saúde não pode ser luxo.</p>
+        </div>
+
+        <div class="beneficio-card fade-in">
+          <div class="card-icon-wrap" style="background:#fff7ed;">
+            <i class="fas fa-boxes" style="color:#ea580c"></i>
+          </div>
+          <h3>Grande variedade</h3>
+          <p>Mais de 5.000 produtos entre medicamentos, perfumaria, suplementos, cosméticos e muito mais.</p>
+        </div>
+
+        <div class="beneficio-card fade-in">
+          <div class="card-icon-wrap" style="background:#f0f9ff;">
+            <i class="fas fa-motorcycle" style="color:#0284c7"></i>
+          </div>
+          <h3>Entrega rápida</h3>
+          <p>Entregamos no Santa Clara e proximidades com agilidade. Pediu, a gente leva até você.</p>
+        </div>
+
+        <div class="beneficio-card fade-in">
+          <div class="card-icon-wrap" style="background:#fdf4ff;">
+            <i class="fas fa-hand-holding-medical" style="color:#9333ea"></i>
+          </div>
+          <h3>Farmácia Popular</h3>
+          <p>Credenciados no programa Farmácia Popular. Medicamentos essenciais com preço subsidiado.</p>
+        </div>
+
+        <div class="beneficio-card fade-in">
+          <div class="card-icon-wrap" style="background:#fff0f0;">
+            <i class="fas fa-flask" style="color:var(--red)"></i>
+          </div>
+          <h3>Manipulação e suplementos</h3>
+          <p>Trabalhamos com manipulação e linha completa de suplementos para sua saúde e bem-estar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUTOS ===== -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">O que você encontra aqui</span>
+        <h2 class="section-title">Tudo em um só lugar,<br/><span class="text-red">perto de você</span></h2>
+      </div>
+
+      <div class="produtos-grid">
+        <div class="produto-card fade-in-left" style="--card-color: #c0392b;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-pills"></i></div>
+            <div class="produto-info">
+              <h3>Medicamentos</h3>
+              <p>Genéricos, similares e de referência com os melhores preços da região.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-right" style="--card-color: #7c3aed;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-spray-can"></i></div>
+            <div class="produto-info">
+              <h3>Perfumaria</h3>
+              <p>Fragrâncias, desodorantes e produtos de beleza das melhores marcas.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-left" style="--card-color: #15803d;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-capsules"></i></div>
+            <div class="produto-info">
+              <h3>Vitaminas</h3>
+              <p>Vitaminas e minerais para fortalecer sua imunidade e disposição.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-right" style="--card-color: #c2410c;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-dumbbell"></i></div>
+            <div class="produto-info">
+              <h3>Suplementos</h3>
+              <p>Proteínas, creatina e suplementação completa para seu treino.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-left" style="--card-color: #0369a1;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-flask"></i></div>
+            <div class="produto-info">
+              <h3>Manipulação</h3>
+              <p>Fórmulas personalizadas com qualidade e segurança garantidas.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-right" style="--card-color: #b45309;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-pump-soap"></i></div>
+            <div class="produto-info">
+              <h3>Higiene pessoal</h3>
+              <p>Sabonetes, shampoos, cremes e tudo para o seu dia a dia.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-left" style="--card-color: #be185d;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-magic"></i></div>
+            <div class="produto-info">
+              <h3>Cosméticos</h3>
+              <p>Maquiagem, skincare e cuidados com a pele para realçar sua beleza.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="produto-card fade-in-right" style="--card-color: #0f766e;">
+          <div class="produto-card-inner">
+            <div class="produto-icon-box"><i class="fas fa-baby"></i></div>
+            <div class="produto-info">
+              <h3>Produtos infantis</h3>
+              <p>Fraldas, pomadas, talcos e tudo que seu bebê precisa com segurança.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="produtos-cta fade-in">
+        <p>Não encontrou o que precisa? Fala com a gente!</p>
         <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary pulse">
-          <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
-        </a>
-        <a href="#localizacao" class="btn btn-secondary">
-          <i class="fas fa-map-marker-alt"></i> Ver localização
+          <i class="fab fa-whatsapp"></i> Consultar produto
         </a>
       </div>
     </div>
+  </section>
 
-    <div class="hero-visual">
-      <div class="hero-visual-card main-card">
-        <div class="visual-icon-wrap">
-          <i class="fas fa-clinic-medical"></i>
+  <!-- ===== FARMÁCIA POPULAR ===== -->
+  <section class="farmpopular" id="farmpopular">
+    <div class="container">
+      <div class="farmpopular-wrapper">
+        <div class="farmpopular-left fade-in-left">
+          <span class="section-label">Programa do Governo Federal</span>
+          <h2 class="section-title">Somos credenciados na<br/><span class="text-red">Farmácia Popular</span></h2>
+          <p class="farmpopular-desc">
+            Trabalhamos com o programa Farmácia Popular do Brasil, garantindo acesso a medicamentos essenciais com preços subsidiados ou até <strong>gratuitos</strong> para quem mais precisa.
+          </p>
+          <div class="farmpopular-items">
+            <div class="fp-item">
+              <div class="fp-item-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <strong>Medicamentos gratuitos ou com desconto</strong>
+                <p>Hipertensão, diabetes, asma e muito mais cobertos pelo programa.</p>
+              </div>
+            </div>
+            <div class="fp-item">
+              <div class="fp-item-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <strong>Atendimento humanizado</strong>
+                <p>Te explicamos tudo sobre o programa com clareza e paciência.</p>
+              </div>
+            </div>
+            <div class="fp-item">
+              <div class="fp-item-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <strong>Processo simples e rápido</strong>
+                <p>Basta apresentar receita e documento. A gente cuida do resto.</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-red">
+            <i class="fab fa-whatsapp"></i> Tirar dúvidas pelo WhatsApp
+          </a>
         </div>
-        <p class="visual-card-title">Gerais Farma</p>
-        <p class="visual-card-sub">Vespasiano — MG</p>
-      </div>
 
-      <div class="hero-stat-card stat-1">
-        <span class="stat-number">5mil+</span>
-        <span class="stat-label">Produtos</span>
+        <div class="farmpopular-right fade-in-right">
+          <div class="fp-badge-card">
+            <div class="fp-badge-icon">
+              <i class="fas fa-hand-holding-medical"></i>
+            </div>
+            <h3>Farmácia Popular</h3>
+            <p>Credenciada pelo Ministério da Saúde</p>
+            <div class="fp-divider"></div>
+            <div class="fp-stats">
+              <div class="fp-stat">
+                <span class="fp-stat-num">100%</span>
+                <span class="fp-stat-label">Gratuito para<br/>alguns remédios</span>
+              </div>
+              <div class="fp-stat-divider"></div>
+              <div class="fp-stat">
+                <span class="fp-stat-num">90%</span>
+                <span class="fp-stat-label">Desconto em<br/>outros casos</span>
+              </div>
+            </div>
+          </div>
+          <div class="fp-tag-float fp-tag-1"><i class="fas fa-heartbeat"></i> Hipertensão</div>
+          <div class="fp-tag-float fp-tag-2"><i class="fas fa-tint"></i> Diabetes</div>
+          <div class="fp-tag-float fp-tag-3"><i class="fas fa-lungs"></i> Asma</div>
+        </div>
       </div>
-
-      <div class="hero-stat-card stat-2">
-        <i class="fas fa-star" style="color:#f59e0b"></i>
-        <span class="stat-label">Melhor da região</span>
-      </div>
-
-      <div class="hero-stat-card stat-3">
-        <i class="fas fa-motorcycle" style="color:var(--red)"></i>
-        <span class="stat-label">Entrega rápida</span>
-      </div>
-
-      <div class="hero-bg-circle"></div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- ===== BENEFÍCIOS ===== -->
-<section class="beneficios" id="beneficios">
+  <!-- ===== SOBRE ===== -->
+<section class="sobre" id="sobre">
   <div class="container">
+    <div class="sobre-wrapper">
 
-    <div class="section-header fade-in">
-      <span class="section-label">Por que nos escolher</span>
-      <h2 class="section-title">Tudo que você precisa,<br/> <span class="text-red">do jeito que merece</span></h2>
-    </div>
-
-    <div class="beneficios-grid">
-
-      <div class="beneficio-card fade-in">
-        <div class="card-icon-wrap" style="background:#fff0f0;">
-          <i class="fas fa-heart" style="color:var(--red)"></i>
+      <div class="sobre-left fade-in-left">
+        <div class="sobre-img-wrap">
+          <div class="sobre-img-card">
+            <i class="fas fa-store-alt"></i>
+          </div>
+          <div class="sobre-badge-float">
+            <i class="fas fa-award"></i>
+            <span>Farmácia da comunidade</span>
+          </div>
         </div>
-        <h3>Atendimento humanizado</h3>
-        <p>Você é tratado pelo nome, com atenção e cuidado de verdade. Aqui você não é só um número.</p>
       </div>
 
-      <div class="beneficio-card fade-in">
-        <div class="card-icon-wrap" style="background:#f0fff4;">
-          <i class="fas fa-tag" style="color:#16a34a"></i>
-        </div>
-        <h3>Preço que o povão gosta</h3>
-        <p>Praticamos os melhores preços da região, porque acreditamos que saúde não pode ser luxo.</p>
-      </div>
+      <div class="sobre-right fade-in-right">
+        <span class="section-label">Quem somos</span>
+        <h2 class="section-title">Uma farmácia feita<br/><span class="text-red">para o povão</span></h2>
+        <p class="sobre-desc">
+          A Gerais Farma nasceu com um propósito simples: oferecer saúde de qualidade com o preço que a comunidade merece. Somos uma farmácia de bairro, mas com estrutura completa.
+        </p>
+        <p class="sobre-desc">
+          Nosso atendimento é próximo, humano e honesto. Conhecemos nossos clientes pelo nome e nos importamos de verdade com o bem-estar de cada um.
+        </p>
 
-      <div class="beneficio-card fade-in">
-        <div class="card-icon-wrap" style="background:#fff7ed;">
-          <i class="fas fa-boxes" style="color:#ea580c"></i>
+        <div class="sobre-destaques">
+          <div class="sobre-destaque">
+            <div class="sd-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Localizados no coração do Santa Clara</strong>
+              <p>Av. Rossana Murta, 124 — Vespasiano, MG</p>
+            </div>
+          </div>
+          <div class="sobre-destaque">
+            <div class="sd-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <strong>Atendimento para toda a família</strong>
+              <p>Do bebê ao idoso, temos tudo que você precisa.</p>
+            </div>
+          </div>
+          <div class="sobre-destaque">
+            <div class="sd-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <strong>Comprometidos com sua saúde</strong>
+              <p>Produtos originais, orientação farmacêutica e confiança.</p>
+            </div>
+          </div>
         </div>
-        <h3>Grande variedade</h3>
-        <p>Mais de 5.000 produtos entre medicamentos, perfumaria, suplementos, cosméticos e muito mais.</p>
-      </div>
-
-      <div class="beneficio-card fade-in">
-        <div class="card-icon-wrap" style="background:#f0f9ff;">
-          <i class="fas fa-motorcycle" style="color:#0284c7"></i>
-        </div>
-        <h3>Entrega rápida</h3>
-        <p>Entregamos no Santa Clara e proximidades com agilidade. Pediu, a gente leva até você.</p>
-      </div>
-
-      <div class="beneficio-card fade-in">
-        <div class="card-icon-wrap" style="background:#fdf4ff;">
-          <i class="fas fa-hand-holding-medical" style="color:#9333ea"></i>
-        </div>
-        <h3>Farmácia Popular</h3>
-        <p>Credenciados no programa Farmácia Popular. Medicamentos essenciais com preço subsidiado.</p>
-      </div>
-
-      <div class="beneficio-card fade-in">
-        <div class="card-icon-wrap" style="background:#fff0f0;">
-          <i class="fas fa-flask" style="color:var(--red)"></i>
-        </div>
-        <h3>Manipulação e suplementos</h3>
-        <p>Trabalhamos com manipulação e linha completa de suplementos para sua saúde e bem-estar.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ===== PRODUTOS ===== -->
-<!-- ===== PRODUTOS ===== -->
-<section class="produtos" id="produtos">
+<!-- ===== HORÁRIOS ===== -->
+<section class="horarios" id="horarios">
   <div class="container">
-
     <div class="section-header fade-in">
-      <span class="section-label">O que você encontra aqui</span>
-      <h2 class="section-title">Tudo em um só lugar,<br/><span class="text-red">perto de você</span></h2>
+      <span class="section-label">Quando estamos abertos</span>
+      <h2 class="section-title">Horários de <span class="text-red">funcionamento</span></h2>
     </div>
 
-    <div class="produtos-grid">
+    <div class="horarios-grid">
 
-      <div class="produto-card fade-in-left" style="--card-color: #c0392b;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-pills"></i>
+      <div class="horario-card fade-in">
+        <div class="horario-icon">
+          <i class="fas fa-calendar-week"></i>
+        </div>
+        <h3>Segunda a Sábado</h3>
+        <div class="horario-info">
+          <div class="horario-row">
+            <i class="fas fa-store"></i>
+            <div>
+              <span class="horario-label">Loja aberta</span>
+              <span class="horario-time">08:00 às 21:30</span>
+            </div>
           </div>
-          <div class="produto-info">
-            <h3>Medicamentos</h3>
-            <p>Genéricos, similares e de referência com os melhores preços da região.</p>
+          <div class="horario-divider"></div>
+          <div class="horario-row">
+            <i class="fas fa-motorcycle"></i>
+            <div>
+              <span class="horario-label">Entregas até</span>
+              <span class="horario-time">20:30</span>
+            </div>
           </div>
         </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
       </div>
 
-      <div class="produto-card fade-in-right" style="--card-color: #7c3aed;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-spray-can"></i>
+      <div class="horario-card fade-in">
+        <div class="horario-icon">
+          <i class="fas fa-sun"></i>
+        </div>
+        <h3>Domingos e Feriados</h3>
+        <div class="horario-info">
+          <div class="horario-row">
+            <i class="fas fa-store"></i>
+            <div>
+              <span class="horario-label">Loja aberta</span>
+              <span class="horario-time">08:00 às 19:45</span>
+            </div>
           </div>
-          <div class="produto-info">
-            <h3>Perfumaria</h3>
-            <p>Fragrâncias, desodorantes e produtos de beleza das melhores marcas.</p>
+          <div class="horario-divider"></div>
+          <div class="horario-row">
+            <i class="fas fa-motorcycle"></i>
+            <div>
+              <span class="horario-label">Entregas até</span>
+              <span class="horario-time">19:00</span>
+            </div>
           </div>
         </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
       </div>
 
-      <div class="produto-card fade-in-left" style="--card-color: #15803d;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-capsules"></i>
-          </div>
-          <div class="produto-info">
-            <h3>Vitaminas</h3>
-            <p>Vitaminas e minerais para fortalecer sua imunidade e disposição.</p>
-          </div>
+      <div class="horario-card horario-cta fade-in">
+        <div class="horario-icon">
+          <i class="fab fa-whatsapp"></i>
         </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <div class="produto-card fade-in-right" style="--card-color: #c2410c;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-dumbbell"></i>
-          </div>
-          <div class="produto-info">
-            <h3>Suplementos</h3>
-            <p>Proteínas, creatina e suplementação completa para seu treino.</p>
-          </div>
-        </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <div class="produto-card fade-in-left" style="--card-color: #0369a1;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-flask"></i>
-          </div>
-          <div class="produto-info">
-            <h3>Manipulação</h3>
-            <p>Fórmulas personalizadas com qualidade e segurança garantidas.</p>
-          </div>
-        </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <div class="produto-card fade-in-right" style="--card-color: #b45309;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-pump-soap"></i>
-          </div>
-          <div class="produto-info">
-            <h3>Higiene pessoal</h3>
-            <p>Sabonetes, shampoos, cremes e tudo para o seu dia a dia.</p>
-          </div>
-        </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <div class="produto-card fade-in-left" style="--card-color: #be185d;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-magic"></i>
-          </div>
-          <div class="produto-info">
-            <h3>Cosméticos</h3>
-            <p>Maquiagem, skincare e cuidados com a pele para realçar sua beleza.</p>
-          </div>
-        </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <div class="produto-card fade-in-right" style="--card-color: #0f766e;">
-        <div class="produto-card-inner">
-          <div class="produto-icon-box">
-            <i class="fas fa-baby"></i>
-          </div>
-          <div class="produto-info">
-            <h3>Produtos infantis</h3>
-            <p>Fraldas, pomadas, talcos e tudo que seu bebê precisa com segurança.</p>
-          </div>
-        </div>
-        <a href="https://wa.me/5531999999999" target="_blank" class="produto-link">
-          Consultar <i class="fas fa-arrow-right"></i>
+        <h3>Fale antes de vir</h3>
+        <p>Consulte disponibilidade de produtos, preços ou solicite entrega diretamente pelo WhatsApp.</p>
+        <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary pulse">
+          <i class="fab fa-whatsapp"></i> Chamar agora
         </a>
       </div>
 
     </div>
-
-    <div class="produtos-cta fade-in">
-      <p>Não encontrou o que precisa? Fala com a gente!</p>
-      <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary pulse">
-        <i class="fab fa-whatsapp"></i> Consultar produto
-      </a>
-    </div>
-
   </div>
 </section>
 
-  <!-- Seções serão adicionadas aqui nos próximos passos -->
+<!-- ===== LOCALIZAÇÃO ===== -->
+<section class="localizacao" id="localizacao">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Onde estamos</span>
+      <h2 class="section-title">Fácil de chegar,<br/><span class="text-red">difícil de esquecer</span></h2>
+    </div>
+
+    <div class="localizacao-wrapper fade-in">
+      <div class="localizacao-info">
+        <div class="loc-item">
+          <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <strong>Endereço</strong>
+            <p>Av. Rossana Murta, 124<br/>Santa Clara — Vespasiano, MG</p>
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <strong>WhatsApp</strong>
+            <p>(31) 99999-9999</p>
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Horário</strong>
+            <p>Seg–Sáb: 08h às 21h30<br/>Dom e feriados: 08h às 19h45</p>
+          </div>
+        </div>
+        
+        </a>
+          href="https://www.google.com/maps/search/Av.+Rossana+Murta+124+Santa+Clara+Vespasiano"
+          target="_blank"
+          class="btn btn-red"
+          style="margin-top: 8px; align-self: flex-start;"
+        >
+          <i class="fas fa-map-marked-alt"></i> Abrir no Google Maps
+        </a>
+      </div>
+
+      <div class="localizacao-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.0!2d-43.9!3d-19.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Rossana+Murta%2C+124+-+Santa+Clara%2C+Vespasiano+-+MG!5e0!3m2!1spt-BR!2sbr!4v1"
+          width="100%" height="100%"
+          style="border:0; border-radius: 16px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Gerais Farma">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-name">Gerais<span class="logo-accent">Farma</span></span>
+          <span class="logo-slogan">A drogaria do povão</span>
+        </div>
+        <p class="footer-desc">
+          Medicamentos, perfumaria, suplementos e muito mais com o melhor atendimento de Vespasiano e região.
+        </p>
+        <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary pulse footer-wa-btn">
+          <i class="fab fa-whatsapp"></i> (31) 99999-9999
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Início</a></li>
+          <li><a href="#beneficios"><i class="fas fa-chevron-right"></i> Benefícios</a></li>
+          <li><a href="#produtos"><i class="fas fa-chevron-right"></i> Produtos</a></li>
+          <li><a href="#sobre"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+          <li><a href="#horarios"><i class="fas fa-chevron-right"></i> Horários</a></li>
+          <li><a href="#localizacao"><i class="fas fa-chevron-right"></i> Localização</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horários</h4>
+        <div class="footer-horarios">
+          <div class="fh-row">
+            <span>Seg – Sáb</span>
+            <span>08h às 21h30</span>
+          </div>
+          <div class="fh-row">
+            <span>Dom e feriados</span>
+            <span>08h às 19h45</span>
+          </div>
+          <div class="fh-row fh-entrega">
+            <span><i class="fas fa-motorcycle"></i> Entregas</span>
+            <span>até 20h30 / 19h</span>
+          </div>
+        </div>
+        <div class="footer-endereco">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Av. Rossana Murta, 124<br/>Santa Clara — Vespasiano, MG</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Gerais Farma. Todos os direitos reservados.</p>
+      <p>Desenvolvido com <i class="fas fa-heart" style="color:var(--red)"></i> para a comunidade</p>
+    </div>
+  </div>
+</footer>
 
   <!-- ===== WHATSAPP FLUTUANTE ===== -->
   <a href="https://wa.me/5531999999999" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>

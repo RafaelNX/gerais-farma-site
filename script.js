@@ -32,3 +32,8 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
   observer.observe(el);
 });
+
+// ===== HERO — visibilidade imediata (sem esperar scroll) =====
+document.querySelectorAll('.hero .fade-in, .hero .fade-in-left, .hero .fade-in-right').forEach(el => {
+  el.classList.add('visible');
+});
